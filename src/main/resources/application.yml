@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://47.100.162.184:3306/mysql?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: sihgyu
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+#  mapper-locations: classpath*:com/greenism/token/dao/*.xml
+  type-aliases-package: com.greenism.token.bean
+  configuration:
+    mapUnderscoreToCamelCase: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
